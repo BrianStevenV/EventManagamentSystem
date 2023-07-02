@@ -56,6 +56,9 @@ dependencies {
 	implementation("com.graphql-java-kickstart:graphiql-spring-boot-starter:6.0.1")
 	implementation("com.graphql-java-kickstart:graphql-java-tools:6.0.0")
 
+	implementation("org.apache.commons:commons-lang3:3.7")
+	implementation("commons-io:commons-io:2.6")
+
 }
 
 tasks.named('test') {

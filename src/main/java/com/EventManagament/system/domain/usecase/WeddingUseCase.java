@@ -14,6 +14,6 @@ public class WeddingUseCase implements IWeddingServicePort {
 
     @Override
     public void createWedding(Wedding wedding) {
-
+        weddingPersistencePort.createWedding(wedding);
     }
 }

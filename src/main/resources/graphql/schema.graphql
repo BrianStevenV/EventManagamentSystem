@@ -1,0 +1,43 @@
+input WeddingRequestDto{
+    dniNumberHusband: Int,
+    dniNumberWife: Int,
+    nameHusband: String,
+    nameWife: String,
+    listGuest: [GuestInput]
+}
+
+type Wedding{
+    idWedding: Int,
+    dniNumberHusband: Int,
+    dniNumberWife: Int,
+    nameHusband: String,
+    nameWife: String,
+    available: Boolean,
+    listGuest: [GuestInput]
+}
+
+type WeddingDocument{
+    id:ID!,
+    idWedding: Int,
+    dniNumberHusband: Int,
+    dniNumberWife: Int,
+    nameHusband: String,
+    nameWife: String,
+    available: Boolean,
+    listGuest: [GuestInput]
+}
+
+type GuestInput {
+    key: Int
+    value: String
+}
+
+
+
+type Mutation {
+    createWedding(weddingRequestDto: WeddingRequestDto): Wedding
+}
+
+type Query{
+
+}
