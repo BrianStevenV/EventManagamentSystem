@@ -3,7 +3,12 @@ input WeddingRequestDto{
     dniNumberWife: Int,
     nameHusband: String,
     nameWife: String,
-    listGuest: [GuestInput]
+    listGuest: [GuestInputDto]
+}
+
+input GuestInputDto{
+    key: Int,
+    value: String
 }
 
 type Wedding{

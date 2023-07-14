@@ -1,5 +1,7 @@
 package com.EventManagament.system.configuration.security;
 
+import com.EventManagament.system.configuration.security.jwt.JwtAuthenticationFilter;
+import com.EventManagament.system.configuration.security.jwt.JwtEntryPoint;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

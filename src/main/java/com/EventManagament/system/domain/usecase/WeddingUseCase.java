@@ -1,7 +1,7 @@
 package com.EventManagament.system.domain.usecase;
 
-import com.EventManagament.system.domain.IWeddingPersistencePort;
-import com.EventManagament.system.domain.IWeddingServicePort;
+import com.EventManagament.system.domain.spi.IWeddingPersistencePort;
+import com.EventManagament.system.domain.api.IWeddingServicePort;
 import com.EventManagament.system.domain.models.Wedding;
 
 

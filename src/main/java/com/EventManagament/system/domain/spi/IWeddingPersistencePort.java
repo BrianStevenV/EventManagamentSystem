@@ -1,4 +1,4 @@
-package com.EventManagament.system.domain;
+package com.EventManagament.system.domain.spi;
 
 import com.EventManagament.system.domain.models.Wedding;
 
