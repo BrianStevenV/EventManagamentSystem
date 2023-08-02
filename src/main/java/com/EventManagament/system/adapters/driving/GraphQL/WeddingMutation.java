@@ -1,6 +1,7 @@
 package com.EventManagament.system.adapters.driving.GraphQL;
 
 import com.EventManagament.system.adapters.driving.WeddingRequestDto;
+import com.EventManagament.system.adapters.driving.dto.request.AvailableWeddingRequestDto;
 import com.EventManagament.system.adapters.driving.handler.IWeddingMutationHandler;
 import graphql.kickstart.tools.GraphQLMutationResolver;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,4 +15,6 @@ public class WeddingMutation implements GraphQLMutationResolver {
     public void createWedding(WeddingRequestDto weddingRequestDto){
         weddingHandler.createWedding(weddingRequestDto);
     }
+    @PreAuthorize("hasRole('MANAGER')")
+    public void availableWedding(AvailableWeddingRequestDto availableWeddingRequest) { weddingHandler.availableWedding(availableWeddingRequest);}
 }

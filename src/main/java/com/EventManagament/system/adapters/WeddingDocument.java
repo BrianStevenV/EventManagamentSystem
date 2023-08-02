@@ -21,4 +21,5 @@ public class WeddingDocument {
     private String nameWife;
     private Boolean available;
     private Map<Integer,String> listGuest;
+    //TODO: DATE WEDDING
 }

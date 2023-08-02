@@ -11,4 +11,5 @@ import org.mapstruct.ReportingPolicy;
 public interface IWeddingDocumentMapper {
 
     WeddingDocument toWeddingDocument(Wedding wedding);
+    Wedding toWedding(WeddingDocument weddingDocument);
 }
